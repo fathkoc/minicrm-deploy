@@ -1,0 +1,19 @@
+# Frontend (Next.js) ile ilgili yoksayılanlar
+node_modules/
+dist/
+out/
+.cache/
+
+# Ortak yoksayılanlar
+.env
+.env.local
+*.log
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+
+# Test ve geçici dosyalar
+*.test.js
+*.spec.js
