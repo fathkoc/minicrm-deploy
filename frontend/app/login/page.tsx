@@ -26,7 +26,7 @@ export default function LoginPage() {
   const handleSubmit = async (e: any) => {
     e.preventDefault()
     try {
-      const res = await axios.post('http://crmapi.duddy.tr/', { email, password })
+      const res = await axios.post('http://crmapi.duddy.tr/api/login', { email, password })
       login(res.data.token)
     } catch (err: any) {
       setError(err.response?.data?.msg || 'Hata oluştu')
