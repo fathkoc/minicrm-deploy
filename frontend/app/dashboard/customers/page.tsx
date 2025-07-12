@@ -18,7 +18,7 @@ type Note = {
   date: string
 }
 
-const API_BASE = 'http://localhost:5000/api'
+const API_BASE = 'http://crmapi.duddy.tr/'
 
 export default function CustomersPage() {
   const router = useRouter()
