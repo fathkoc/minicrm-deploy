@@ -26,7 +26,7 @@ export default function RegisterPage() {
   const handleSubmit = async (e: any) => {
     e.preventDefault()
     try {
-      await axios.post('http://localhost:5000/api/register', { email, password })
+      await axios.post('http://crmapi.duddy.tr/api/register', { email, password })
       setMessage(' Kayıt başarılı! Giriş sayfasına yönlendiriliyorsunuz...')
       setTimeout(() => router.push('/login'), 2000)
     } catch (err: any) {
